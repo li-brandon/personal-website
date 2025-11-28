@@ -18,7 +18,7 @@ function getLanguageColor(language: string): string {
 export default function ProjectsGrid() {
   return (
     <section className="py-12">
-      <h2 className="text-xl font-semibold text-white mb-8">Projects</h2>
+      <h2 className="text-xl font-semibold text-foreground mb-8">Projects</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project) => (
@@ -27,16 +27,16 @@ export default function ProjectsGrid() {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block p-5 rounded-xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] hover:border-white/10 transition-all"
+            className="group block p-5 rounded-xl bg-muted border border-border hover:bg-muted/80 hover:border-border/80 transition-all"
           >
             <div className="flex items-start justify-between mb-3">
               <div className="flex items-center gap-2">
                 <span className="text-xl">{project.emoji}</span>
-                <h3 className="font-medium text-white group-hover:text-white/90">
+                <h3 className="font-medium text-foreground group-hover:text-foreground/90">
                   {project.name}
                 </h3>
               </div>
-              <div className="flex items-center gap-1 text-white/40 text-sm">
+              <div className="flex items-center gap-1 text-foreground/40 text-sm">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
@@ -48,7 +48,7 @@ export default function ProjectsGrid() {
               </div>
             </div>
 
-            <p className="text-white/50 text-sm mb-4 leading-relaxed">
+            <p className="text-foreground/50 text-sm mb-4 leading-relaxed">
               {project.description}
             </p>
 
@@ -58,7 +58,7 @@ export default function ProjectsGrid() {
                   project.language
                 )}`}
               ></span>
-              <span className="text-white/40 text-sm">{project.language}</span>
+              <span className="text-foreground/40 text-sm">{project.language}</span>
             </div>
           </a>
         ))}
@@ -66,4 +66,3 @@ export default function ProjectsGrid() {
     </section>
   );
 }
-

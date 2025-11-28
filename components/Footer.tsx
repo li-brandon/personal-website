@@ -4,13 +4,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-white/5 mt-20">
+    <footer className="border-t border-border mt-20">
       <div className="max-w-3xl mx-auto px-6 py-8">
-        <p className="text-white/40 text-sm text-center">
+        <p className="text-foreground/40 text-sm text-center">
           {siteConfig.name} © {currentYear}
         </p>
       </div>
     </footer>
   );
 }
-

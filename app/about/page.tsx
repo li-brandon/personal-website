@@ -13,16 +13,16 @@ export default function AboutPage() {
   return (
     <div className="max-w-3xl mx-auto px-6">
       <section className="py-12">
-        <h1 className="text-3xl font-bold text-white mb-8">About me</h1>
+        <h1 className="text-3xl font-bold text-foreground mb-8">About me</h1>
 
-        <div className="prose prose-invert prose-lg max-w-none space-y-4">
-          <p className="text-white/70 leading-relaxed">
+        <div className="prose prose-invert dark:prose-invert max-w-none space-y-4">
+          <p className="text-foreground/70 leading-relaxed">
             <em>{aboutContent.intro}</em>
           </p>
-          <p className="text-white/70 leading-relaxed">{aboutContent.current}</p>
-          <p className="text-white/70 leading-relaxed">{aboutContent.passion}</p>
-          <p className="text-white/70 leading-relaxed">{aboutContent.background}</p>
-          <p className="text-white/70 leading-relaxed">{aboutContent.outside}</p>
+          <p className="text-foreground/70 leading-relaxed">{aboutContent.current}</p>
+          <p className="text-foreground/70 leading-relaxed">{aboutContent.passion}</p>
+          <p className="text-foreground/70 leading-relaxed">{aboutContent.background}</p>
+          <p className="text-foreground/70 leading-relaxed">{aboutContent.outside}</p>
         </div>
 
         {/* Photo Grid */}
@@ -30,7 +30,7 @@ export default function AboutPage() {
           {photos.map((photo, index) => (
             <figure
               key={index}
-              className="group relative aspect-square rounded-xl overflow-hidden bg-white/5"
+              className="group relative aspect-square rounded-xl overflow-hidden bg-muted"
             >
               <Image
                 src={photo.src}
@@ -38,7 +38,7 @@ export default function AboutPage() {
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
-              <figcaption className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <figcaption className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 dark:from-black/80 to-transparent">
                 <p className="text-white text-sm font-medium">{photo.caption}</p>
               </figcaption>
             </figure>
@@ -52,4 +52,3 @@ export default function AboutPage() {
     </div>
   );
 }
-
