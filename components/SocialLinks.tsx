@@ -3,7 +3,7 @@ import { socialLinks } from "@/lib/data";
 export default function SocialLinks() {
   return (
     <section className="py-12">
-      <h2 className="text-xl font-semibold text-white mb-6">Online</h2>
+      <h2 className="text-xl font-semibold text-foreground mb-6">Online</h2>
 
       <ul className="flex flex-wrap gap-4">
         {socialLinks.map((link) => (
@@ -12,7 +12,7 @@ export default function SocialLinks() {
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 text-white/70 hover:text-white hover:bg-white/10 transition-all text-sm"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-muted text-foreground/70 hover:text-foreground hover:bg-muted/80 transition-all text-sm"
             >
               {link.name}
               <svg
@@ -35,4 +35,3 @@ export default function SocialLinks() {
     </section>
   );
 }
-
