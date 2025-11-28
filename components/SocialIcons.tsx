@@ -28,39 +28,27 @@ const iconMap: Record<string, React.ReactNode> = {
   ),
 };
 
-export default function SocialLinks() {
-  return (
-    <section className="py-16 border-t border-white/5">
-      <h2 className="text-2xl font-bold text-white mb-8">Online</h2>
+interface SocialIconsProps {
+  className?: string;
+  iconClassName?: string;
+}
 
-      <ul className="flex flex-wrap gap-3">
-        {socialLinks.map((link) => (
-          <li key={link.name}>
-            <a
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-white/[0.03] border border-white/5 text-white/60 hover:text-white hover:bg-white/[0.06] hover:border-emerald-500/20 transition-all duration-300 text-sm"
-            >
-              {iconMap[link.icon]}
-              {link.name}
-              <svg
-                className="w-3 h-3 opacity-40"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </section>
+export default function SocialIcons({ className = "", iconClassName = "" }: SocialIconsProps) {
+  return (
+    <div className={`flex items-center gap-3 ${className}`}>
+      {socialLinks.map((link) => (
+        <a
+          key={link.name}
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`text-white/40 hover:text-white transition-colors duration-200 ${iconClassName}`}
+          aria-label={link.name}
+        >
+          {iconMap[link.icon]}
+        </a>
+      ))}
+    </div>
   );
 }
+

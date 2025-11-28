@@ -7,7 +7,9 @@ export default function Home() {
     <div className="max-w-3xl mx-auto px-6">
       <Hero />
       <WritingsList />
-      <ProjectsGrid />
+      <section className="py-16 border-t border-white/5">
+        <ProjectsGrid />
+      </section>
     </div>
   );
 }

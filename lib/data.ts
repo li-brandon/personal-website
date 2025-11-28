@@ -1,28 +1,79 @@
 export const siteConfig = {
   name: "Carlos Cuesta",
+  siteName: "Carlos's Corner",
   location: "Barcelona, Spain",
   title: "Front End Engineer",
   tagline: "I'm a Front End Engineer based in Barcelona. I code, write and run bueno.studio.",
   description: "I love working in-between product, engineering and developer experience, currently at Apple.",
   avatar: "/avatar.svg",
+  rssUrl: "/rss.xml",
 };
 
 export const socialLinks = [
-  { name: "Twitter", url: "https://twitter.com" },
-  { name: "GitHub", url: "https://github.com" },
-  { name: "LinkedIn", url: "https://linkedin.com" },
-  { name: "Email", url: "mailto:hello@example.com" },
+  { name: "Twitter", url: "https://twitter.com", icon: "twitter" },
+  { name: "GitHub", url: "https://github.com", icon: "github" },
+  { name: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" },
+  { name: "Email", url: "mailto:hello@example.com", icon: "email" },
+  { name: "Instagram", url: "https://instagram.com", icon: "instagram" },
 ];
 
 export const writings = [
-  { title: "Automated macOS Dev Setup", date: "May 03, 2025", views: 1112, slug: "automated-macos-dev-setup" },
-  { title: "Building Server-Driven UIs", date: "Oct 04, 2024", views: 2018, slug: "building-server-driven-uis" },
-  { title: "Writing RFCs", date: "Mar 02, 2024", views: 2223, slug: "writing-rfcs" },
-  { title: "React Miami 2023", date: "Apr 22, 2023", views: 2090, slug: "react-miami-2023" },
-  { title: "Effective Refactoring with Codemods", date: "Jan 29, 2023", views: 2082, slug: "effective-refactoring-codemods" },
-  { title: "Using Generators to Improve Developer Productivity", date: "May 23, 2022", views: 2025, slug: "generators-developer-productivity" },
-  { title: "Writing Architecture Decision Records", date: "Mar 01, 2022", views: 1570, slug: "architecture-decision-records" },
-  { title: "Composing UIs with Finite State Machines", date: "May 03, 2021", views: 6626, slug: "finite-state-machines" },
+  { 
+    title: "Automated macOS Dev Setup", 
+    date: "May 03, 2025", 
+    views: 1112, 
+    slug: "automated-macos-dev-setup",
+    description: "How I automated my entire macOS development environment setup with a single script."
+  },
+  { 
+    title: "Building Server-Driven UIs", 
+    date: "Oct 04, 2024", 
+    views: 2018, 
+    slug: "building-server-driven-uis",
+    description: "Exploring the architecture and benefits of server-driven UI patterns in modern applications."
+  },
+  { 
+    title: "Writing RFCs", 
+    date: "Mar 02, 2024", 
+    views: 2223, 
+    slug: "writing-rfcs",
+    description: "A guide to writing effective Request for Comments documents for technical decisions."
+  },
+  { 
+    title: "React Miami 2023", 
+    date: "Apr 22, 2023", 
+    views: 2090, 
+    slug: "react-miami-2023",
+    description: "Highlights and takeaways from React Miami 2023 conference."
+  },
+  { 
+    title: "Effective Refactoring with Codemods", 
+    date: "Jan 29, 2023", 
+    views: 2082, 
+    slug: "effective-refactoring-codemods",
+    description: "Using codemods to automate large-scale code refactoring safely and efficiently."
+  },
+  { 
+    title: "Using Generators to Improve Developer Productivity", 
+    date: "May 23, 2022", 
+    views: 2025, 
+    slug: "generators-developer-productivity",
+    description: "How code generators can eliminate boilerplate and boost team productivity."
+  },
+  { 
+    title: "Writing Architecture Decision Records", 
+    date: "Mar 01, 2022", 
+    views: 1570, 
+    slug: "architecture-decision-records",
+    description: "Documenting architectural decisions to preserve context for future developers."
+  },
+  { 
+    title: "Composing UIs with Finite State Machines", 
+    date: "May 03, 2021", 
+    views: 6626, 
+    slug: "finite-state-machines",
+    description: "Building predictable and maintainable UI components using state machines."
+  },
 ];
 
 export const projects = [
@@ -73,6 +124,33 @@ export const projects = [
     language: "JavaScript",
     stars: 69,
     url: "https://github.com/carloscuesta/hyper-materialshell",
+  },
+];
+
+export const talks = [
+  {
+    title: "Building Scalable Design Systems",
+    event: "React Summit 2024",
+    date: "Jun 14, 2024",
+    location: "Amsterdam",
+    videoUrl: "https://youtube.com",
+    slidesUrl: "https://slides.com",
+  },
+  {
+    title: "The Future of Frontend Architecture",
+    event: "JSConf EU",
+    date: "May 20, 2023",
+    location: "Berlin",
+    videoUrl: "https://youtube.com",
+    slidesUrl: "https://slides.com",
+  },
+  {
+    title: "State Machines in Production",
+    event: "React Miami",
+    date: "Apr 22, 2023",
+    location: "Miami",
+    videoUrl: "https://youtube.com",
+    slidesUrl: "https://slides.com",
   },
 ];
 
@@ -147,4 +225,3 @@ export const visitedCountries = [
   "THA", // Thailand
   "JPN", // Japan
 ];
-
