@@ -1,46 +1,38 @@
 export const siteConfig = {
-  name: "Carlos Cuesta",
-  location: "Barcelona, Spain",
-  title: "Front End Engineer",
-  tagline: "I'm a Front End Engineer based in Barcelona. I code, write and run bueno.studio.",
-  description: "I love working in-between product, engineering and developer experience, currently at Apple.",
-  avatar: "/avatar.svg",
+  name: "Brandon Li",
+  location: "Fort Worth, TX",
+  title: "Full Stack Engineer",
+  tagline: "Hi everyone, my name is Brandon Li and I'm currently a Software Engineer at Fidelity Investments based out of Westlake, TX.",
+  description: "My work centers around reducing trading costs and increasing alpha capture for OPEX (an AI model-driven automated trading system).",
+  avatar: "/photos/brandon_li.jpeg",
 };
 
 export const socialLinks = [
-  { name: "Twitter", url: "https://twitter.com" },
-  { name: "GitHub", url: "https://github.com" },
-  { name: "LinkedIn", url: "https://linkedin.com" },
-  { name: "Email", url: "mailto:hello@example.com" },
+  { name: "Twitter", url: "https://x.com/bli0706" },
+  { name: "GitHub", url: "https://github.com/li-brandon" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/librandon0706/" },
+  { name: "Email", url: "mailto:li.brandon@outlook.com" },
 ];
 
 export const writings = [
-  { title: "Automated macOS Dev Setup", date: "May 03, 2025", views: 1112, slug: "automated-macos-dev-setup" },
-  { title: "Building Server-Driven UIs", date: "Oct 04, 2024", views: 2018, slug: "building-server-driven-uis" },
-  { title: "Writing RFCs", date: "Mar 02, 2024", views: 2223, slug: "writing-rfcs" },
-  { title: "React Miami 2023", date: "Apr 22, 2023", views: 2090, slug: "react-miami-2023" },
-  { title: "Effective Refactoring with Codemods", date: "Jan 29, 2023", views: 2082, slug: "effective-refactoring-codemods" },
-  { title: "Using Generators to Improve Developer Productivity", date: "May 23, 2022", views: 2025, slug: "generators-developer-productivity" },
-  { title: "Writing Architecture Decision Records", date: "Mar 01, 2022", views: 1570, slug: "architecture-decision-records" },
-  { title: "Composing UIs with Finite State Machines", date: "May 03, 2021", views: 6626, slug: "finite-state-machines" },
 ];
 
 export const projects = [
   {
-    name: "gitmoji",
-    description: "An emoji guide for your commit messages.",
-    emoji: "😜",
+    name: "SpotKit",
+    description: "Your personal Spotify toolkit. Connect your account to explore your profile, discover playlist covers, and more.",
+    emoji: "🎧",
     language: "TypeScript",
-    stars: 16596,
-    url: "https://github.com/carloscuesta/gitmoji",
+    stars: 0,
+    url: "https://github.com/li-brandon/SpotKit",
   },
   {
-    name: "gitmoji-cli",
-    description: "A gitmoji interactive cli tool for using emojis on commits.",
-    emoji: "💻",
-    language: "JavaScript",
-    stars: 4797,
-    url: "https://github.com/carloscuesta/gitmoji-cli",
+    name: "Todoist AI Ranker",
+    description: "Automatically prioritize your Todoist tasks using AI. This Python script fetches your tasks, analyzes them with GPT, and updates priorities based on urgency, impact, effort, and due dates.",
+    emoji: "💡",
+    language: "Python",
+    stars: 0,
+    url: "https://github.com/li-brandon/todoist-ai-ranker",
   },
   {
     name: "materialshell",
@@ -147,4 +139,3 @@ export const visitedCountries = [
   "THA", // Thailand
   "JPN", // Japan
 ];
-
