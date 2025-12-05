@@ -34,38 +34,6 @@ export const projects = [
     stars: 0,
     url: "https://github.com/li-brandon/todoist-ai-ranker",
   },
-  {
-    name: "materialshell",
-    description: "A material design theme for your terminal.",
-    emoji: "✨",
-    language: "Shell",
-    stars: 843,
-    url: "https://github.com/carloscuesta/materialshell",
-  },
-  {
-    name: "react-native-error-boundary",
-    description: "A simple React-Native error boundary component",
-    emoji: "🐛",
-    language: "TypeScript",
-    stars: 595,
-    url: "https://github.com/carloscuesta/react-native-error-boundary",
-  },
-  {
-    name: "starterkit",
-    description: "A Front End development Gulp.js based workflow.",
-    emoji: "🚀",
-    language: "JavaScript",
-    stars: 89,
-    url: "https://github.com/carloscuesta/starterkit",
-  },
-  {
-    name: "hyper-materialshell",
-    description: "A material design theme for Hyper based on materialshell.",
-    emoji: "✨",
-    language: "JavaScript",
-    stars: 69,
-    url: "https://github.com/carloscuesta/hyper-materialshell",
-  },
 ];
 
 export const workHistory = [
